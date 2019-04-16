@@ -1,13 +1,15 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  get '/home' => 'books#home'
-  get '/books' => 'books#index'
-  get '/books/new' => 'books#new'
-  post '/books' => 'books#create'
-  get '/books/:id', to: 'books#show'
-  get '/books/:id/edit' => 'books#edit'
-  put '/books/:id' => 'books#update'
-  delete '/books/:id' => 'books#destroy'
+  get '/home', to: 'books#home'
+  get "/books", to: "books#index", as: "books"
+  get "/books/new", to: "books#new", as: "new_book"
+  post '/books', to: 'books#create'
+  get "/books/:id", to: "books#show", as: "show_book"
+  get "/books/:id/edit", to: "books#edit", as: "edit_book"
+  patch '/books/:id', to: 'books#update'
+  put '/books/:id', to: 'books#update'
+  
+  delete '/books/:id', to: "books#destroy", as: "delete_book"
 
   root to: 'books#home'
 end
