@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Books R Us</title>
+    <title>Fakebook.com</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -19,12 +19,14 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="/home">Books R Us</a>
+      <%= link_to home_path, class: "btn" do %>
+        <i class="fas fa-book fa-lg"></i> 
+      <% end %>
     </div>
     <ul class="nav navbar-nav">
       <li><a href="/home">Home</a></li>
       <li><a href="/books">Booklist</a></li>
-      <li><a href="/books/new">Add Book</a></li>
+      <li><a href="/books/new">Add Review</a></li>
     </ul>
   </div>
 </nav>

@@ -1,6 +1,6 @@
 <div class="container">
   <div class="title-box">
-    <h1>Edit Book Review</h1>
+    <h1>Edit Review</h1>
   </div>
   <form class="form" action="<%= book_path(params[:id]) %>" method="POST" >
     <input type="hidden" value="<%= form_authenticity_token %>" name="authenticity_token" />
@@ -25,5 +25,4 @@
     <input type="submit" value="Update" class="create"/>
   </form>
   <%= link_to "<< Back", :back %>
-  <%= link_to "Booklist >>", :books %>
   </div>
