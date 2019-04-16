@@ -14,38 +14,8 @@
  *= require_self
  */
 
- /* @import url('https://fonts.googleapis.com/css?family=Montserrat|Patua+One');
- @import './button.css';
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Patua+One');
 
- h1 {
-  font-family: 'Montserrat', sans-serif;
- }
 
- h2 {
-  font-family: 'Montserrat', sans-serif;
- }
 
- h3 {
-  font-family: 'Montserrat', sans-serif;
- }
-
- h4 {
-  font-family: 'Montserrat', sans-serif;
- }
-
- .book-list {
-   color: #4682B4;
- }
-
- .book-detail {
-  color: #4682B4;
- }
-
- .back {
-   text-decoration: none;
- }
-
- .details {
-   text-decoration: none;
- } */
 

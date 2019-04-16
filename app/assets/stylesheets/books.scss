@@ -3,49 +3,120 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .wrapper h2 {
-  color: rgb(8, 3, 48);
-  font-size: 18px;
-  background: rgb(7, 150, 95);
+  color: white;
+  font-size: 17px;
+  background: black;
+  font-family: 'Montserrat', sans-serif;
+  border: solid 1px black;
 }
+
+.wrapper h3 {
+  background: #00bfff;
+  color: white;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .wrapper {
   border-style: solid;
   width: 30%;
   padding: 5px 0px;
+  margin: 5px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover !important;
+  background-position: center;
+  background-image: url("ksenia-makagonova.jpg");
 }
-.button {
-display: flex;
-justify-content: center;
 
+.button {
+  display: flex;
+  justify-content: center;
 }
+
 .book-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .book-detail h2 {
-  color: green;
-  background: yellow;
+  color: white;
+  background: black;
+  font-family: 'Montserrat', sans-serif;
 }
 .book-detail p,h2,h3,h4 {
   padding: 5px;
+  font-family: 'Montserrat', sans-serif;
 }
-
-
 
 .book-detail {
-  background: greenyellow;
- 
+  margin-top: 50px;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.btn {
-  // width: 200px;
-  // height: 200px;
-  padding: 5px 50px;
-  border-radius: 40px;
-  font-size: 18px;
-  line-height: 1.33;
-  border-color: black;
-  color: white;
-  background: blue;
-  margin: 0px 5px;
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // background: linear-gradient(180deg, #74ebd5, #ACB6E5);
+  flex-direction: column;
+}
+
+.title-box {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 10vh;
+}
+
+.form {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.collection {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  // text-align: ;
+   word-wrap: break-word;
+  text-align: left;
+  padding:  0.4em;
+  padding-bottom:190px;
+  width: 400px;
+  height: 50px;
+}
+
+label {
+  margin-top: 10px;
+}
+
+.create {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.texter {
+  width: 400px;
+  text-align: center;
+}
+
+.back {
+  text-decoration: none;
 }

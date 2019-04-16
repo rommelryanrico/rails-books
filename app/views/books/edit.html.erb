@@ -1,24 +1,29 @@
-<h1>Edit Book</h1>
-
-<form action="<%= edit_book_path(params[:id]) %>" method="POST" >
+<div class="container">
+  <div class="title-box">
+    <h1>Edit Book Review</h1>
+  </div>
+  <form class="form" action="<%= book_path(params[:id]) %>" method="POST" >
     <input type="hidden" value="<%= form_authenticity_token %>" name="authenticity_token" />
 
     <input type="hidden" name="_method" value="patch" />
 
     <label>Title</label>
-    <input type="text" name="title" value="<%= @book.title %>"/>
+    <input type="text" name="title" class="texter" value="<%= @book.title %>"/>
 
     <label>Author</label>
-    <input type="text" name="author" value="<%= @book.author %>"/>
+    <input type="text" name="author" class="texter" value="<%= @book.author %>"/>
 
     <label>Publisher</label>
-    <input type="text" name="publisher" value="<%= @book.publisher %>"/>
+    <input type="text" name="publisher" class="texter" value="<%= @book.publisher %>"/>
     
     <label>Genre</label>
-    <input type="text" name="genre" value="<%= @book.genre %>"/>
+    <input type="text" name="genre" class="texter" value="<%= @book.genre %>"/>
 
     <label>Description</label>
-    <input type="textarea" name="description" value="<%= @book.description %>"/>
+    <input type="textarea" name="description" class="description" value="<%= @book.description %>"/>
 
-    <input type="submit" value="Update" />
-</form>
+    <input type="submit" value="Update" class="create"/>
+  </form>
+  <%= link_to "<< Back", :back %>
+  <%= link_to "Booklist >>", :books %>
+  </div>
