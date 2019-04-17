@@ -12,3 +12,7 @@ To use the new database we needed to remove the database on the local system wit
 2. rake db:migrate (came up with an error: rake aborted!, relation "books" already exists)
 3. rake db:reset (Dropped database and created a new database from the pull down project)
 4. run rails server 
+
+##Potential Issues
+
+```How is the database updated across different users for a project?```
