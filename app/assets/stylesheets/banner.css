@@ -24,7 +24,8 @@
   background-color: antiquewhite;
   /* opacity: 0.8; */
   margin-bottom: 30px;
-  padding: 3px;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .banner {
