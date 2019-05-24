@@ -1,5 +1,9 @@
 # README
 
+A rails applications I made with a classmate for a one day challenge. It is a simple book review website.
+
+https://obscure-mesa-78011.herokuapp.com/
+
 ## Running cloned Rails App on Collaborators Computer
 
 ```After pulling Github project and cloning then running rails server there was an error message stating that their was a database conflict (name of database already existed).```
@@ -13,6 +17,6 @@ To use the new database we needed to remove the database on the local system wit
 3. rake db:reset (Dropped database and created a new database from the pull down project)
 4. run rails server 
 
-##Potential Issues
+## Potential Issues
 
 ```How is the database updated across different users for a project?```
